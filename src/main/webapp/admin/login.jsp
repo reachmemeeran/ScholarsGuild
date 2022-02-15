@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div align="center">
-		<h1>Item Store Administrator</h1>
+		<h1>Guild Administrator</h1>
 		<h2>Admin Login</h2>
 		
 		<c:if test="${message!=null}">

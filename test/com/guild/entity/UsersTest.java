@@ -11,7 +11,7 @@ public class UsersTest {
 		user1.setFullName("Meeran2f");
 		user1.setPassword("meeran2p");
 		
-		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("ItemStoreWebsite");
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("Guild");
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		
 		entityManager.getTransaction().begin();

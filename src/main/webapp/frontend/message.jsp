@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Meeran Items - Online Items Store</title>
+<title>Scholars Guild</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
