@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Customer Profile - Online Items Store</title>
+<title>Customer Profile - Guild</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>

@@ -5,7 +5,7 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
-	<title>Manage Users - Meeran ItemStore Administration</title>
+	<title>Manage Users - Guild Administration</title>
 	<link rel="stylesheet" href="../css/style.css">
 	<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
