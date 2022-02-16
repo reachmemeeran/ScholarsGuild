@@ -1,4 +1,4 @@
-package com.guild.controller.frontend.customer;
+package com.guild.controller.frontend.scholar;
 
 import java.io.IOException;
 
@@ -8,26 +8,26 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.guild.service.CustomerServices;
+import com.guild.service.ScholarServices;
 
 @WebServlet("/login")
-public class CustomerLoginServlet extends HttpServlet {
+public class ScholarLoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public CustomerLoginServlet() {
+    public ScholarLoginServlet() {
         super();
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		CustomerServices customerServices = new CustomerServices(request, response);
-		customerServices.showLogin();
+		ScholarServices scholarServices = new ScholarServices(request, response);
+		scholarServices.showLogin();
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		CustomerServices customerServices = new CustomerServices(request, response);
-		customerServices.doLogin();
+		ScholarServices scholarServices = new ScholarServices(request, response);
+		scholarServices.doLogin();
 	}
 
 }

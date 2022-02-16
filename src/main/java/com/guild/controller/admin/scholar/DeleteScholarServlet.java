@@ -1,4 +1,4 @@
-package com.guild.controller.admin.customer;
+package com.guild.controller.admin.scholar;
 
 import java.io.IOException;
 
@@ -8,20 +8,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.guild.service.CustomerServices;
+import com.guild.service.ScholarServices;
 
-@WebServlet("/admin/delete_customer")
-public class DeleteCustomerServlet extends HttpServlet {
+@WebServlet("/admin/delete_scholar")
+public class DeleteScholarServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public DeleteCustomerServlet() {
+    public DeleteScholarServlet() {
         super();
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		CustomerServices customerServices = new CustomerServices(request, response);
-		customerServices.deleteCustomer();
+		ScholarServices scholarServices = new ScholarServices(request, response);
+		scholarServices.deleteScholar();
 	}
 
 }

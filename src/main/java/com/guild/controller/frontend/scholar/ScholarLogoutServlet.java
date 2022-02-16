@@ -1,4 +1,4 @@
-package com.guild.controller.frontend.customer;
+package com.guild.controller.frontend.scholar;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/logout")
-public class CustomerLogoutServlet extends HttpServlet {
+public class ScholarLogoutServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public CustomerLogoutServlet() {
+    public ScholarLogoutServlet() {
         super();
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		request.getSession().removeAttribute("loggedCustomer");
+		request.getSession().removeAttribute("loggedScholar");
 		response.sendRedirect(request.getContextPath());
 	}
 

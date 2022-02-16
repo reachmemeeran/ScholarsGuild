@@ -14,12 +14,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 @WebFilter("/*")
-public class CustomerLoginFilter implements Filter {
+public class ScholarLoginFilter implements Filter {
 
 	private static final String[] loginrequiredURLs = {
 			"/view_profile","/edit_profile","/update_profile"
 	};
-    public CustomerLoginFilter() {
+    public ScholarLoginFilter() {
     }
 
 	public void destroy() {
@@ -36,7 +36,7 @@ public class CustomerLoginFilter implements Filter {
 			chain.doFilter(request, response);
 			return;
 		}
-		boolean loggedIn = session !=null && session.getAttribute("loggedCustomer")!=null;
+		boolean loggedIn = session !=null && session.getAttribute("loggedScholar")!=null;
 		String requestURL = httpRequest.getRequestURL().toString();
 		System.out.println("path--->"+path);
 		System.out.println("loggedIn--->"+loggedIn);

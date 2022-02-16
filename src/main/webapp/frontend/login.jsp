@@ -6,12 +6,12 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/style.css">
-<title>Customer Login</title>
+<title>Scholar Login</title>
 </head>
 <body>
 	<jsp:directive.include file="header.jsp" />
 	<div align="center">
-		<h2>Customer Login</h2>
+		<h2>Scholar Login</h2>
 		<c:if test="${message!=null}">
 			<div align="center">
 				<h4 class="message">${message}</h4>

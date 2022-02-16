@@ -11,8 +11,8 @@ CREATE TABLE `users` (
   UNIQUE KEY `user_id_UNIQUE` (`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
-CREATE TABLE `customer` (
-  `customer_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `scholar` (
+  `scholar_id` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(64) NOT NULL,
   `fullname` varchar(30) NOT NULL,
   `address` varchar(128) NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE `customer` (
   `zipcode` varchar(24) NOT NULL,
   `password` varchar(100) NOT NULL,
   `register_date` datetime NOT NULL,
-  PRIMARY KEY (`customer_id`),
-  UNIQUE KEY `customer_id_UNIQUE` (`customer_id`),
+  PRIMARY KEY (`scholar_id`),
+  UNIQUE KEY `scholar_id_UNIQUE` (`scholar_id`),
   UNIQUE KEY `email_UNIQUE` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;

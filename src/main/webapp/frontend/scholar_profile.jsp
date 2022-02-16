@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Customer Profile - Guild</title>
+<title>Scholar Profile - Guild</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,38 +12,38 @@
 
 	<div align="center">
 		<br/>
-		<h2>Welcome, ${loggedCustomer.fullname}</h2>
+		<h2>Welcome, ${loggedScholar.fullname}</h2>
 		<br/>
 	
 	
 		<table class="normal">
 			<tr>
 				<td><b>E-mail Address:</b></td>
-				<td>${loggedCustomer.email}</td>
+				<td>${loggedScholar.email}</td>
 			</tr>
 			<tr>
 				<td><b>Full Name:</b></td>
-				<td>${loggedCustomer.fullname}</td>
+				<td>${loggedScholar.fullname}</td>
 			</tr>
 			<tr>
 				<td><b>Phone Number:</b></td>
-				<td>${loggedCustomer.phone}</td>
+				<td>${loggedScholar.phone}</td>
 			</tr>
 			<tr>
 				<td><b>Address:</b></td>
-				<td>${loggedCustomer.address}</td>
+				<td>${loggedScholar.address}</td>
 			</tr>
 			<tr>
 				<td><b>City:</b></td>
-				<td>${loggedCustomer.city}</td>
+				<td>${loggedScholar.city}</td>
 			</tr>
 			<tr>
 				<td><b>Zipcode:</b></td>
-				<td>${loggedCustomer.zipcode}</td>
+				<td>${loggedScholar.zipcode}</td>
 			</tr>
 			<tr>
 				<td><b>Country:</b></td>
-				<td>${loggedCustomer.country}</td>
+				<td>${loggedScholar.country}</td>
 			</tr>
 			<tr><td>&nbsp;</td></tr>
 			<tr>

@@ -23,7 +23,7 @@
           <a href="new_idea">New Idea</a>&nbsp;&nbsp;&nbsp;
           <a href="user_form.jsp">New User</a>&nbsp;&nbsp;&nbsp;
           <a href="category_form.jsp">New Category</a>&nbsp;&nbsp;&nbsp;
-          <a href="customer_form.jsp">New Customer</a>
+          <a href="scholar_form.jsp">New Scholar</a>
           </b>
      </div>
      
@@ -34,7 +34,7 @@
           	<tr>
           		<td><b>Total Users: ${totalAdmins}</b></td>
           		<td><b>Total Idea: ${totalIdea}</b></td>
-          		<td><b>Total Customers: ${totalCustomers}</b></td>
+          		<td><b>Total Scholars: ${totalScholars}</b></td>
           	</tr>
           </table>
      </div>
