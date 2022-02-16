@@ -26,8 +26,8 @@
 			</a>
 		</div>
 		<div>
-			<a href="list_customer">
-				<img src="../images/customer.png"/><br/>Customers
+			<a href="list_scholar">
+				<img src="../images/scholar.png"/><br/>Scholars
 			</a>
 		</div>
 	</div>

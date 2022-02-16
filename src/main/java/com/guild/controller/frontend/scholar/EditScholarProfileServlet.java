@@ -1,4 +1,4 @@
-package com.guild.controller.frontend.customer;
+package com.guild.controller.frontend.scholar;
 
 import java.io.IOException;
 
@@ -8,20 +8,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.guild.service.CustomerServices;
+import com.guild.service.ScholarServices;
 
 @WebServlet("/edit_profile")
-public class EditustomerProfileServlet extends HttpServlet {
+public class EditScholarProfileServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public EditustomerProfileServlet() {
+    public EditScholarProfileServlet() {
         super();
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		CustomerServices customerServices = new CustomerServices(request, response);
-		customerServices.showCustomerProfileEditForm();
+		ScholarServices scholarServices = new ScholarServices(request, response);
+		scholarServices.showScholarProfileEditForm();
 	}
 
 }

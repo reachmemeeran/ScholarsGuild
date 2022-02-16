@@ -5,7 +5,7 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
-	<title>Register as a Customer</title>
+	<title>Register as a Scholar</title>
 	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/jquery-ui.min.css">
@@ -18,12 +18,12 @@
 	<div align="center">
 
 		<h2 class="pageheading">
-			Register as a Customer
+			Register as a Scholar
 		</h2>
 	</div>
 
 	<div align="center">
-		<form action="register_customer" method="post" id="customerForm">
+		<form action="register_scholar" method="post" id="scholarForm">
 
 		<table class="form">
 			<tr>
@@ -81,7 +81,7 @@
 <script type="text/javascript">
 
 	$(document).ready(function() {
-		$("#customerForm").validate({
+		$("#scholarForm").validate({
 			rules: {
 				email: {
 					required: true,
@@ -105,17 +105,17 @@
 					required: "Please enter the e-mail address",
 					email: "Please enter a valid e-mail address"
 				},
-				fullname: "Please enter Full Name of the Customer",
-				password: "Please enter Password of the Customer",
+				fullname: "Please enter Full Name of the Scholar",
+				password: "Please enter Password of the Scholar",
 				confirmPassword: {
-					required: "Please enter Confirm Password of the Customer",
+					required: "Please enter Confirm Password of the Scholar",
 					equalTo: "Confirm Password does not match the password",
 				},
-				phone: "Please enter Phone Number of the Customer",
-				address: "Please choose address of the Customer",
-				city: "Please enter city of the Customer",
-				zipcode: "Please enter Zipcode of the Customer",
-				country: "Please enter country of the Customer"
+				phone: "Please enter Phone Number of the Scholar",
+				address: "Please choose address of the Scholar",
+				city: "Please enter city of the Scholar",
+				zipcode: "Please enter Zipcode of the Scholar",
+				country: "Please enter country of the Scholar"
 			}
 		});
 		

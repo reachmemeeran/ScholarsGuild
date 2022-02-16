@@ -14,12 +14,12 @@
 <body>
 	<jsp:directive.include file="header.jsp" />
 	<div align="center">
-		<h2 class="pageheading">Customer Management</h2>
+		<h2 class="pageheading">Scholar Management</h2>
 	</div>
 
 	<div align="center">
 		<h3>
-			<a href="customer_form.jsp">Create New Customer</a>
+			<a href="scholar_form.jsp">Create New Scholar</a>
 		</h3>
 	</div>
 
@@ -43,18 +43,18 @@
 				<th>Registered Date</th>
 				<th>Actions</th>
 			</tr>
-			<c:forEach var="customer" items="${listCustomer}" varStatus="status">
+			<c:forEach var="scholar" items="${listScholar}" varStatus="status">
 				<tr>
 					<td>${status.index+1}</td>
-					<td>${customer.customerId}</td>
-					<td>${customer.email}</td>
-					<td>${customer.fullname}</td>
-					<td>${customer.city}</td>
-					<td>${customer.country}</td>
-					<td><fmt:formatDate pattern='MM/dd/yyyy' value='${customer.registerDate }'/> </td>
+					<td>${scholar.scholarId}</td>
+					<td>${scholar.email}</td>
+					<td>${scholar.fullname}</td>
+					<td>${scholar.city}</td>
+					<td>${scholar.country}</td>
+					<td><fmt:formatDate pattern='MM/dd/yyyy' value='${scholar.registerDate }'/> </td>
 					<td>
-						<a href="edit_customer?id=${customer.customerId}">Edit</a> &nbsp; 
-						<a href="javascript:void(0);" class="deleteLink" id="${customer.customerId}">Delete</a>
+						<a href="edit_scholar?id=${scholar.scholarId}">Edit</a> &nbsp; 
+						<a href="javascript:void(0);" class="deleteLink" id="${scholar.scholarId}">Delete</a>
 					</td>
 				</tr>
 			</c:forEach>
@@ -69,9 +69,9 @@
 		$(document).ready(function(){
 			$(".deleteLink").each(function(){
 				$(this).on("click",function(){
-					customerId=$(this).attr("id");
-					if(confirm("Are you sure you want to delete the customer with ID " + customerId + " ?")){
-						window.location = 'delete_customer?id='+customerId;
+					scholarId=$(this).attr("id");
+					if(confirm("Are you sure you want to delete the scholar with ID " + scholarId + " ?")){
+						window.location = 'delete_scholar?id='+scholarId;
 					}
 				});
 			});

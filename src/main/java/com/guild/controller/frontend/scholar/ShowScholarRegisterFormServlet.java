@@ -1,4 +1,4 @@
-package com.guild.controller.frontend.customer;
+package com.guild.controller.frontend.scholar;
 
 import java.io.IOException;
 
@@ -10,10 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/register")
-public class ShowCustomerRegisterFormServlet extends HttpServlet {
+public class ShowScholarRegisterFormServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public ShowCustomerRegisterFormServlet() {
+    public ShowScholarRegisterFormServlet() {
         super();
     }
 
