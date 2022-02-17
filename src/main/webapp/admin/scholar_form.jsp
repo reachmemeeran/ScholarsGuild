@@ -16,6 +16,7 @@
 <body>
 	<jsp:directive.include file="header.jsp" />
 	
+	<div class="indexmiddlebar">
 	<div align="center">
 		<h2 class="pageheading">
 			<c:if test="${scholar != null}">
@@ -82,6 +83,7 @@
 			</tr>				
 		</table>
 		</form>
+	</div>
 	</div>
 
 	<jsp:directive.include file="footer.jsp" />

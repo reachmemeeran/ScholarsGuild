@@ -11,8 +11,9 @@
    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+	<div class="main-container">
      <jsp:directive.include file="header.jsp" />
-     
+	<div class="indexmiddlebar">     
      <div align="center">
           <h2>Administrative Dashboard</h2>
      </div>
@@ -38,7 +39,8 @@
           	</tr>
           </table>
      </div>
-     
+     </div>
      <jsp:directive.include file="footer.jsp" />
+     </div>
 </body>
 </html>
