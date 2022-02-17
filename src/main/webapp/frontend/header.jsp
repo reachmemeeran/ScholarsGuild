@@ -12,10 +12,7 @@
             </div>
             <div class="middle-item">
                 <div class="link-item-h">
-                	<a href="${pageContext.request.contextPath}">Home</a>
-                </div>
-                <div class="link-item-h">
-                    <a href="#">Activity</a>
+                	<a href="${pageContext.request.contextPath}">Activity</a>
                 </div>
                 <div class="link-item-h">
                     <a href="#">Members</a>

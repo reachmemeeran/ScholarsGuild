@@ -12,6 +12,7 @@
 </head>
 <body>
 	<jsp:directive.include file="header.jsp" />
+	<div class="indexmiddlebar">
 	<div align="center">
 
 		<h2 class="pageheading">
@@ -60,6 +61,7 @@
 			</tr>
 		</table>
 		</form>
+		</div>
 	</div>
 
 

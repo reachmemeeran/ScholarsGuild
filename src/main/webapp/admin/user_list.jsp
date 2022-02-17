@@ -12,6 +12,7 @@
 </head>
 <body>
 	<jsp:directive.include file="header.jsp" />
+	<div class="indexmiddlebar">
 	<div align="center">
 		<h2 class="pageheading">Users Management</h2>
 	</div>
@@ -53,7 +54,7 @@
 			</c:forEach>
 		</table>
 	</div>
-
+</div>
 
 	<jsp:directive.include file="footer.jsp" />
 
