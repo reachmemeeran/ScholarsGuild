@@ -8,8 +8,9 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div class="main-container">
 	<jsp:directive.include file="header.jsp" />
-	
+	<br/><br/><br/><br/><br/><br/><br/><br/>
 	<div align="center">
 		<h3>This is the Main content: New Ideas, Trending Ideas, Old Ideas</h3>
 		<h2>New Ideas:</h2>
@@ -18,6 +19,7 @@
 	</div>
 	
 	<jsp:directive.include file="footer.jsp" />
+	</div>
 	
 </body>
 </html>
