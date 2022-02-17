@@ -9,6 +9,9 @@
 <title>Scholar Login</title>
 </head>
 <body>
+<div class="main-container">
+	<jsp:directive.include file="header.jsp" />
+	<br/><br/><br/><br/><br/><br/><br/><br/>
 	<jsp:directive.include file="header.jsp" />
 	<div align="center">
 		<h2>Scholar Login</h2>
@@ -38,6 +41,7 @@
 	</div>
 
 	<jsp:directive.include file="footer.jsp" />
+	</div>
 
 </body>
 </html>
