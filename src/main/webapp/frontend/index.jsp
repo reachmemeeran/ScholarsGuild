@@ -11,38 +11,23 @@
 	<div class="main-container">
 	<jsp:directive.include file="header.jsp" />
 	<div class="indexleftbar">
+	
             <div class="link-item-s">
-                <a class="fa fa-bars"></a>
+               <i>BLOG</i>
             </div>
             <div class="link-item-s item-margin-2">
-                <a class="fa-solid fa-user"></a>
+                <img class="img leftsidebar" src="images/leftsidebar/leftsidebaridea1.png">
             </div>
             <div class="link-item-s">
-                <a class="fa-solid fa-user-group"></a>
+                <img class="img leftsidebar" src="images/leftsidebar/leftsidebaridea2.png">
             </div>
             <div class="link-item-s">
-                <a class="fa-solid fa-inbox"></a>
+                <img class="img leftsidebar" src="images/leftsidebar/leftsidebaridea3.png">
             </div>
             <div class="link-item-s">
-                <a class="fa-solid fa-image"></a>
+                <img class="img leftsidebar" src="images/leftsidebar/leftsidebaridea4.png">
             </div>
-            <div class="link-item-s">
-                <a class="fa-solid fa-graduation-cap"></a>
-            </div>
-            <div class="link-item-s">
-                <a class="fa-solid fa-comments"></a>
-            </div>
-            <div class="link-item-s">
-                <a class="fa-brands fa-facebook"></a>
-            </div>
-            <div class="link-item-s">
-                <a class="fa-brands fa-instagram-square"></a>
-            </div>
-            <div class="link-item-s">
-                <a class="fa-brands fa-linkedin"></a>
-            </div>
-
-        </div>
+     </div>
 	
 	
 	<div class="indexmiddlebar">
@@ -51,39 +36,17 @@
 		<h2>New Ideas:</h2>
 		<h2>Trending Ideas:</h2>
 		<h2>Old Ideas:</h2>
+		
 	</div>
 	</div>
 	
 	<div class="indexrightbar">
+	
             <div class="link-item-s">
-                <a class="fa fa-bars"></a>
+                <i>LATEST UPDATE</i>
             </div>
             <div class="link-item-s item-margin-2">
-                <a class="fa-solid fa-user"></a>
-            </div>
-            <div class="link-item-s">
-                <a class="fa-solid fa-user-group"></a>
-            </div>
-            <div class="link-item-s">
-                <a class="fa-solid fa-inbox"></a>
-            </div>
-            <div class="link-item-s">
-                <a class="fa-solid fa-image"></a>
-            </div>
-            <div class="link-item-s">
-                <a class="fa-solid fa-graduation-cap"></a>
-            </div>
-            <div class="link-item-s">
-                <a class="fa-solid fa-comments"></a>
-            </div>
-            <div class="link-item-s">
-                <a class="fa-brands fa-facebook"></a>
-            </div>
-            <div class="link-item-s">
-                <a class="fa-brands fa-instagram-square"></a>
-            </div>
-            <div class="link-item-s">
-                <a class="fa-brands fa-linkedin"></a>
+                <img class="img rightsidebar" src="images/rightsidebar/rightsidebar1.png">
             </div>
 
         </div>
