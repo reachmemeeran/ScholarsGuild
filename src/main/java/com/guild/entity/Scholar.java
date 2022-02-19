@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
@@ -36,13 +37,14 @@ public class Scholar implements java.io.Serializable {
 	private String phone;
 	private String zipcode;
 	private String password;
+	private byte[] profilepic;
 	private Date registerDate;
 
 	public Scholar() {
 	}
 
 	public Scholar(int scholarId, String email, String fullname, String address, String city, String country,
-			String phone, String zipcode, String password, Date registerDate) {
+			String phone, String zipcode, String password, byte[] profilepic, Date registerDate) {
 		this.scholarId = scholarId;
 		this.email = email;
 		this.fullname = fullname;
@@ -52,6 +54,7 @@ public class Scholar implements java.io.Serializable {
 		this.phone = phone;
 		this.zipcode = zipcode;
 		this.password = password;
+		this.profilepic=profilepic;
 		this.registerDate = registerDate;
 	}
 
@@ -136,6 +139,16 @@ public class Scholar implements java.io.Serializable {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	@Lob
+	@Column(name = "profilepic", nullable = true, columnDefinition="mediumblob")
+	public byte[] getProfilepic() {
+		return this.profilepic;
+	}
+
+	public void setProfilepic(byte[] profilepic) {
+		this.profilepic = profilepic;
 	}
 
 	@Temporal(TemporalType.TIMESTAMP)

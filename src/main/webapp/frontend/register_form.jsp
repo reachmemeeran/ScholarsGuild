@@ -26,7 +26,7 @@
 	</div>
 
 	<div align="center">
-		<form action="register_scholar" method="post" id="scholarForm">
+		<form action="register_scholar" method="post" id="scholarForm" enctype="multipart/form-data">
 
 		<table class="form">
 			<tr>
@@ -64,6 +64,10 @@
 			<tr>
 				<td align="right">Country:</td>
 				<td align="left"><input type="text" id="country" name="country" size="45"  /></td>
+			</tr>
+			<tr>
+				<td align="right">Profile Picture:</td>
+				<td align="left"><input type="file" id="profilepic" name="profilepic"  /></td>
 			</tr>
 			<tr>
 				<td>&nbsp;</td>
