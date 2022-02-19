@@ -48,6 +48,10 @@
 				<td><b>Country:</b></td>
 				<td>${loggedScholar.country}</td>
 			</tr>
+			<tr>
+				<td><b>Profile Picture:</b></td>
+				<td><img src="data:image/jpeg;base64,${profilepic}" style="width:300px;height:200px;"/></td>
+			</tr>
 			<tr><td>&nbsp;</td></tr>
 			<tr>
 				<td colspan="2" align="center">

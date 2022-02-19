@@ -21,6 +21,7 @@ CREATE TABLE `scholar` (
   `phone` varchar(15) NOT NULL,
   `zipcode` varchar(24) NOT NULL,
   `password` varchar(100) NOT NULL,
+  `profilepic` MEDIUMBLOB,
   `register_date` datetime NOT NULL,
   PRIMARY KEY (`scholar_id`),
   UNIQUE KEY `scholar_id_UNIQUE` (`scholar_id`),

@@ -1,15 +1,18 @@
 package com.guild.service;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.Base64;
 import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.servlet.http.Part;
 
-import com.guild.dao.ScholarDAO;
 import com.guild.dao.HashGenerator;
+import com.guild.dao.ScholarDAO;
 import com.guild.entity.Scholar;
 
 public class ScholarServices extends CommonUtility {
@@ -64,6 +67,8 @@ public class ScholarServices extends CommonUtility {
 		String city = request.getParameter("city");
 		String zipcode = request.getParameter("zipcode");
 		String country = request.getParameter("country");
+		//String profilepic = request.getParameter("profilepic");
+		
 		
 		if (email != null && !email.equals("")) {
 			scholar.setEmail(email);
@@ -80,7 +85,25 @@ public class ScholarServices extends CommonUtility {
 		scholar.setAddress(address);
 		scholar.setCity(city);
 		scholar.setZipcode(zipcode);
-		scholar.setCountry(country);		
+		scholar.setCountry(country);	
+		
+		try {
+			Part profilepic = request.getPart("profilepic");
+			InputStream inpStm = null;
+			if(profilepic != null) {
+				
+					inpStm = profilepic.getInputStream();
+					byte[] bFile = new byte[inpStm.available()];
+					inpStm.read(bFile);
+					scholar.setProfilepic(bFile);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ServletException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
  	public void registerScholar() throws ServletException, IOException {
@@ -166,11 +189,8 @@ public class ScholarServices extends CommonUtility {
 	}
 
 	public void doLogin() throws ServletException, IOException {
-		System.out.println("111111111");
 		String email = request.getParameter("email");
-		System.out.println("22222"+email);
 		String password = request.getParameter("password");
-		System.out.println("333333"+password);
 		
 		Scholar scholar = scholarDAO.checkLogin(email, password);
 		
@@ -182,6 +202,13 @@ public class ScholarServices extends CommonUtility {
 		} else {
 			HttpSession session = request.getSession();
 			session.setAttribute("loggedScholar", scholar);
+			byte[] profilepic = scholar.getProfilepic(); 
+			if(profilepic!=null) {
+				String encode = Base64.getEncoder().encodeToString(profilepic);
+				session.setAttribute("profilepic", encode);
+			}else {
+				session.setAttribute("profilepic", null);
+			}
 			
 			Object objRedirectURL = session.getAttribute("redirectURL");
 			
@@ -190,13 +217,17 @@ public class ScholarServices extends CommonUtility {
 				session.removeAttribute("redirectURL");
 				response.sendRedirect(redirectURL);
 			} else {
-				showScholarProfile();
+				showScholarIndex();
 			}
 		}
 	}
 	
 	public void showScholarProfile() throws ServletException, IOException {
 		forwardToPage("frontend/scholar_profile.jsp", request, response);
+	}
+	
+	public void showScholarIndex() throws ServletException, IOException {
+		forwardToPage("frontend/index.jsp", request, response);
 	}
 
 	public void showScholarProfileEditForm() throws ServletException, IOException {

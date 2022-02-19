@@ -32,7 +32,12 @@
             </div>
             <div class="link-item-h user-cont">
             <c:if test="${loggedScholar!=null }">
-                <div class="user-icon"><a class="fa-solid fa-user"></a></div>
+            	<c:if test="${profilepic!=null }">
+            	<img src="data:image/jpeg;base64,${profilepic}" alt="Avatar" style="width:60px;height:50px;border-radius:50%"/>
+            	</c:if>
+            	<c:if test="${profilepic==null }">
+            		<div class="user-icon"><a class="fa-solid fa-user"></a></div>
+            	</c:if>
                 <a href="view_profile">Welcome, ${loggedScholar.fullname } </a>
                 <i><a href="logout"> <span>Logout</span></a></i>
             </c:if>
